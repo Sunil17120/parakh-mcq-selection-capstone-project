@@ -14,7 +14,7 @@ worker_class = 'uvicorn.workers.UvicornWorker'
 # A common heuristic is (2 * CPU_cores) + 1. 
 # This helps maximize throughput while avoiding contention.
 # We use multiprocessing to detect the host machine's core count automatically.
-workers = multiprocessing.cpu_count() * 2 + 1 
+workers = 2
 
 # 4. Application Entry Point
 # The format is <module_name>:<fastapi_app_instance>
